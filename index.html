@@ -1,178 +1,487 @@
 <!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
+<!--<![endif]-->
 <head>
-<title>Page Title</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>POOJITHA YATA RA1811028010072</title>
+    <!--GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--BOOTSTRAP MAIN STYLES -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!--FONTAWESOME MAIN STYLE -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--PRETTYPHOTO MAIN STYLE -->
+    <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
+    <!--CUSTOM STYLE -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 <style>
-* {
-  box-sizing: border-box;
+.text-center{
+   background-color: #eee;
+   width: 300px;
+   height: 300px;
+   border: 1px dotted black;
+   margin-bottom: 20px;
+   overflow-y: scroll;
 }
-
-/* Style the body */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+.text-center::-webkit-scrollbar {
+   display: none;
 }
-
-/* Header/logo Title */
-.header {
-  padding: 80px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-}
-
-/* Increase the font size of the heading */
-.header h1 {
-  font-size: 40px;
-}
-
-/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Active/current link */
-.navbar a.active {
-  background-color: #666;
-  color: white;
-}
-
-/* Column container */
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Main column */
-.main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
+.text-center {
+  -ms-overflow-style: none;
 }
 </style>
 </head>
+
 <body>
 
-<div class="header">
-  <h1>Programming Paradigms</h1>
-  <h2>An <b>overview</h2>
-  <p> RA1811028010083 <p>
-  
-</div>
+    <!--NAV SECTION -->
+    <header id="header-nav" role="banner">
+        <div id="navbar" class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><i class="fa fa-pencil color-brown"></i>PYTHON</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav flot-nav">
+                    <li><a href="#slide-head"><i class="fa fa-home color-red"></i> Home</a></li>
+                    <li><a href="#about-section"><i class="fa fa-wrench color-brown"></i>More Info</a></li>
+                    <li><a href="#python-paradigms"><i class="fa fa-check color-green"></i> Python Programming Paradigms</a></li>                    
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--END NAV SECTION -->
+    <!--SLIDE CAROUSEL SECTION -->
+    <section id="slide-head" class="carousel">
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>IMPERATIVE PARADIGM</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- ./ first active div-->
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>STRUCTURED PARADIGM</h1>
+                    </div>
+                </div>
+            </div>
+<div class="item">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>PROCEDURAL PARADIGM</h1>
+                    </div>
+                </div>
+            </div>
+<div class="item">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>OBJECT ORIENTED PARADIGM</h1>
+                    </div>
+                </div>
+            </div>
+<div class="item">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>EVENT DRIVEN</h1>
+                    </div>
+                </div>
+            </div>
+<div class="item">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>DECLARATIVE PARADIGM</h1>
+                    </div>
+                </div>
+            </div>
+<div class="item">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>PARALLEL PARADIGM</h1>
+                    </div>
+                </div>
+            </div>
+<div class="item">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>CONCURRENT PARADIGM</h1>
+                    </div>
+                </div>
+            </div>
+<div class="item">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>FUNCTIONAL PARADIGM</h1>
+                    </div>
+                </div>
+            </div>
+<div class="item">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>LOGIC PARADIGM</h1>
+                    </div>
+                </div>
+            </div>
+<div class="item">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>DEPENDENT TYPE PARADIGM</h1>
+                    </div>
+                </div>
+            </div>
+<div class="item">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>NETWORK PROGRAMMING PARADIGM</h1>
+                    </div>
+                </div>
+            </div>
+<div class="item">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>SYMBOLIC PARADIGM</h1>
+                    </div>
+                </div>
+            </div>
 
-<div class="navbar">
-  <a href="#" class="middle">THE FOUR MAJOR DIVISIONS</a>
-</div>
+<div class="item">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>AUTOMATA PARADIGM</h1>
+                    </div>
+                </div>
+            </div>
+<div class="item">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>GRAPHICAL USER INTERFACE</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- ./ Second div-->
+        </div>
+        <a class="prev" href="#slide-head" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+        <a class="next" href="#slide-head" data-slide="next"><i class="fa fa-angle-right"></i></a>
+    </section>
+    <!--END SLIDE CAROUSEL SECTION -->
+        <!--SERVICES SECTION -->
+    <section id="python-paradigms">
+        <div class="wrap-pad">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 " data-scrollreveal="enter top and move 1300px, wait 0.5s">
+                    <div class="text-center1">
+                        <h1><i class="fa fa-check large-icons bk-color-white">Python Programming Paradigms</i></h1>
+                        <p class="lead">
+                         Paradigm can also be termed as method to solve some problem or do some task. Programming paradigm is an approach to solve problem using some programming language or also we can say it is a method to solve a problem using tools and techniques that are available to us following some approach. There are lots for programming language that are known but all of them need to follow some strategy when they are implemented and this methodology/strategy is paradigms. Apart from varieties of programming language there are lots of paradigms to fulfil each and every demand. They are discussed below:
+                        </p>
+                    </div>
+                </div>
+                <!-- ./ Heading div-->
+                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 ">
+                    <div class="col-md-4 col-sm-6" data-scrollreveal="enter left and move 100px, wait 0.6s">
+                        <div class="text-center">
+                            <i class="fa fa-pencil icon-round bk-color-black"></i>
+                            <h4>Imperative Paradigm</h4>
+                            <p>
+It is one of the oldest programming paradigm. It features close relation relation to machine architecture. It is based on Von Neumann architecture. It works by changing the program state through assignment statements. It performs step by step task by changing state. The main focus is on how to achieve the goal. The paradigm consist of several statements and after execution of all the result is stored.
+ </p> 
+<p>Advantage:
 
-<div class="row">
-  <div class="side">
-    <h2>List of Major Paradigms</h2>
-    <h5>Imperative</h5>
-    <h5>Functional</h5>
-    <h5>Logical</h5>
-    <h5>Object-Oriented</h5>
-    <img src="data:image/png;base64,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" width="253" height="193">
-<img
-src="https://cdn.shortpixel.ai/client/q_lossless,ret_img,w_783/https://www.comakeit.com/blog/wp-content/uploads/2018/03/Functional-Programming-Languages.jpg"  width="253" height="193">
-  </div>
-  <div class="main">
-    <h2>IMPERATIVE</h2>
-    <img
-src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTYwhJKZ139AdSn37WsNQkiSrnX7iYvNwaos5EzuE6tnr5y3Dby"  width="400" height="200">
-    <p>In computer science, imperative programming is a programming paradigm that uses statements that change a program's state. In much the same way that the imperative mood in natural languages expresses commands, an imperative program consists of commands for the computer to perform.</p>
-    <br>
-    <h2>FUNCTIONAL</h2>
-    <img
-    src="https://www.guru99.com/images/1/080118_0618_WhatisFunct1.png"  width="400" height="200">
-    <p>Functional programming (often abbreviated FP) is the process of building software by composing pure functions, avoiding shared state, mutable data, and side-effects. Functional programming is declarative rather than imperative, and application state flows through pure functions<p>
-  </div>
-</div>
+Very simple to implement
+It contains loops, variables etc.</p>
 
- </div>
-  <div class="main">
-    <h2>LOGICAL</h2>
-    <img src="https://qph.fs.quoracdn.net/main-qimg-f24ddf6f37c67c070720b3cd71802666" width="600" height="600">
-    <p>Logic programming is a programming paradigm which is largely based on formal logic. Any program written in a logic programming language is a set of sentences in logical form, expressing facts and rules about some problem domain.</p>
-    <br>
-    <h2>OBJECT ORIENTED</h2>
-    <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190717114649/Object-Oriented-Programming-Concepts.jpg" alt="Trulli" width="400" height="200">
-    <p>Object-oriented programming is a programming paradigm based on the concept of "objects", which can contain data, in the form of fields, and code, in the form of procedures. A feature of objects is an object's procedures that can access and often modify the data fields of the object with which they are associated.<p>
-  </div>
-</div>
+<p>Disadvantage:
 
-<div class="footer">
-  <h4>Reference link to wikipedia for detailed outline of all paradigms</h4>
-  <h5>https://en.wikipedia.org/wiki/Programming_paradigm<h5>
-</div>
+Complex problem cannot be solved
+Less efficient and less productive
+Parallel programming is not possibless
+                            </p>
+<p>Examples C, C++, Java, Kotlin, PHP, Python, Ruby, Wolfram Language
+</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6" data-scrollreveal="enter bottom and move 100px, wait 0.6s">
+                        <div class="text-center">
+                            <i class="fa fa-book icon-round bk-color-light-blue"></i>
+                            <h4>Structured paradigm</h4>
+                            <p>
+                                Structured Programming Approach, as the word suggests, can be defined as a programming approach in which the program is made as a single structure. It means that the code will execute the instruction by instruction one after the other. It doesn’t support the possibility of jumping from one instruction to some other with the help of any statement like GOTO, etc. Therefore, the instructions in this approach will be executed in a serial and structured manner. The languages that support Structured programming approach are: C C++ Java C# etc... The structured program mainly consists of three types of elements: Selection Statements Sequence Statements Iteration Statements The structured program consists of well structured and separated modules. But the entry and exit in a Structured program is a single-time event. It means that the program uses single-entry and single-exit elements. Therefore a structured program is well maintained, neat and clean program. This is the reason why the Structured Programming Approach is well accepted in the programming world.
+<p>Advantages:</p>
+<p>It is user friendly and eassy to understand</p>
+<p>It requires less time</p>
+<p>These are mainly problem oriented rather than machine based</p>
+<p>Disadvantages:</p>
+<p>Inefficient</p>
+<p>Time consuming</p>
+<p>Examples C, C++, Java, Kotlin, Pascal, PHP, Python, Wolfram Language
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6" data-scrollreveal="enter right and move 100px, wait 0.6s">
+                        <div class="text-center">
+                            <i class="fa fa-desktop icon-round bk-color-green"></i>
+                            <h4>Procedural Paradigm</h4>
+                            <p>
+                                This paradigm emphasizes on procedure in terms of under lying machine model. There is no difference in between procedural and imperative approach. It has the ability to reuse the code and it was boon at that time when it was in use because of its reusability.
+                            </p>
+<p>Advantages:</p>
+<p>It requires less memory</p>
+<p>It is simple</p>
+<p>Disadvantages:</p>
+<p>No security for data</p>
+<p>Difficult to create new data types</p>
+<p>Examples C, C++, Lisp, PHP, Python, Wolfram Language
+</p>
 
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6" data-scrollreveal="enter left and move 100px, wait 0.6s">
+                        <div class="text-center">
+                            <i class="fa fa-envelope icon-round bk-color-blue"></i>
+                            <h4>Object Oriented Paradigm</h4>
+                            <p>
+                               The program is written as a collection of classes and object which are meant for communication. The smallest and basic entity is object and all kind of computation is performed on the objects only. More emphasis is on data rather procedure. It can handle almost all kind of real life problems which are today in scenario.
+</p>
+<p>Advantages:
+</p>
+<p>
+Data security</p>
+<p>Inheritance</p>
+<p>Code reusability</p>
+<p>sFlexible and abstraction is also present
+                            </p>
+<p>
+Disadvantages:</p>
+<p>It can causee duplication </p>
+<p> It can be too scalable</p>
+<p> It can inefficient</p>
+<p>Examples Common Lisp, C++, C#, Eiffel, Java, Kotlin, PHP, Python, Ruby, Scala, JavaScript
+</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6" data-scrollreveal="enter bottom and move 100px, wait 0.6s">
+                        <div class="text-center">
+                            <i class="fa fa-bars icon-round bk-color-black"></i>
+                            <h4>Event Driven</h4>
+                            <p>In computer programming, event-driven programming is a programming paradigm in which the flow of the program is determined by events such as user actions (mouse clicks, key presses), sensor outputs, or messages from other programs or threads. Event-driven programming is the dominant paradigm used in graphical user interfaces and other applications (e.g., JavaScript web applications) that are centered on performing certain actions in response to user input. This is also true of programming for device drivers (e.g., P in USB device driver stacks[1]). In an event-driven application, there is generally a main loop that listens for events, and then triggers a callback function when one of those events is detected. In embedded systems, the same may be achieved using hardware interrupts instead of a constantly running main loop. Event-driven programs can be written in any programming language, although the task is easier in languages that provide high-level abstractions, such as await and closures.
+</p>
+                                
+<p>Advantages:</p>
+<p>Flexibility</p>
+<p>It is suitable for graphical user interface</p>
+<p>Disadvantages:</p>
+<p> It is complex</p>
+<p> It is difficult to find error</p>
+<p>Tight coupling
+                            </p>
+<p>Examples JavaScript, ActionScript, Visual Basic, Elm
+</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6" data-scrollreveal="enter right and move 100px, wait 0.6s">
+                        <div class="text-center">
+                            <i class="fa fa-bell icon-round bk-color-brown"></i>
+                            <h4>Declarative Paradigm</h4>
+                            <p>
+                               It is divided as Logic, Functional, Database. In computer science the declarative programming is a style of building programs that expresses logic of computation without talking about its control flow. It often considers programs as theories of some logic.It may simplify writing parallel programs. The focus is on what needs to be done rather how it should be done basically emphasize on what code code is actually doing. It just declare the result we want rather how it has be produced. This is the only difference between imperative (how to do) and declarative (what to do) programming paradigms. Getting into deeper we would see logic, functional and database.s
+                            </p>
+<p>Advantages:</p>
+<p> Easy optimization </p>
+<p> shorter and efficient code</p>
+<p>Disadvantages:</p>
+<p> Hard to understand for external people </p>
+<p> Hard to take characteristics of individual applications</p>
+<p>Examples SQL, regular expressions, Prolog, OWL, SPARQL, XSLT
+</p>
+
+                        </div>
+                    </div>
+                      <div class="col-md-4 col-sm-6" data-scrollreveal="enter right and move 100px, wait 0.6s">
+                        <div class="text-center">
+                            <i class="fa fa-bookmark icon-round bk-color-blue"></i>
+                            <h4>Parallel Paradigm</h4>
+                            <p>
+                               Parallel processing is the processing of program instructions by dividing them among multiple processors. A parallel processing system posses many numbers of processor with the objective of running a program in less time by dividing them. This approach seems to be like divide and conquer. Examples are NESL (one of the oldest one) and C/C++ also supports because of some library function.
+                            </p>
+<p>Advantages:</p>
+<p> Processing speed can be improved</p>
+<p>Better cost per performance in the long-term</p>
+
+<p>Disadvantages:</p>
+<p> It is difficult to write parallel programs</p>
+<p> It requires high power consumption </p>
+
+
+                        </div>
+                    </div>
+<div class="col-md-4 col-sm-6" data-scrollreveal="enter right and move 100px, wait 0.6s">
+                        <div class="text-center">
+                            <i class="fa fa-comment icon-round bk-color-light-blue"></i>
+                            <h4>Concurrent Paradigm</h4>
+                            <p>Concurrent computing is a form of computing in which several computations are executed concurrently—during overlapping time periods—instead of sequentially, with one completing before the next starts. This is a property of a system—whether a program, computer, or a network—where there is a separate execution point or "thread of control" for each process. A concurrent system is one where a computation can advance without waiting for all other computations to complete. Concurrent computing is a form of modular programming. In its paradigm an overall computation is factored into subcomputations that may be executed concurrently. Pioneers in the field of concurrent computing include Edsger Dijkstra, Per Brinch Hansen, and C.A.R. Hoare.
+</p>
+<p>Advantages</p>
+<p> Error detection is easier</p>
+<p> Feedback can be collected easily</p>
+<p>Disadvantages:</p>
+<p> Software quality is not assured</p>
+<p> Software requires more maintainance </p>
+
+                        </div>
+                    </div>
+<div class="col-md-4 col-sm-6" data-scrollreveal="enter right and move 100px, wait 0.6s">
+                        <div class="text-center">
+                            <i class="fa fa-desktop icon-round bk-color-blue"></i>
+                            <h4>Functional Paradigm</h4>
+                            <p>
+                                The functional programming paradigms has its roots in mathematics and it is language independent. The key principal of this paradigms is the execution of series of mathematical functions. The central model for the abstraction is the function which are meant for some specific computation and not the data structure. Data are loosely coupled to functions.The function hide their implementation. Function can be replaced with their values without changing the meaning of the program. Some of the languages like perl, javascript mostly uses this paradigm.
+                            </p>
+<p>
+Advantages:</p>
+<p> High level abstraction</p>
+<p> Easier to write code </p>
+<p> Testing and debugging becomes easier</p>
+<p>Disadvantages:</p>
+<p> No efficient vocabulary</p>
+<p> not suitable for graphs </p>
+<p>Examples C++, Clojure, Coffeescript, Elixir, Erlang, F#, Haskell, Java , Kotlin, Lisp, Python, R, Ruby, Scala, SequenceL, Standard ML, JavaScript, Elm, Wolfram Language
+</p>
+                        </div>
+                    </div>
+<div class="col-md-4 col-sm-6" data-scrollreveal="enter right and move 100px, wait 0.6s">
+                        <div class="text-center">
+                            <i class="fa fa-filter icon-round bk-color-black"></i>
+                            <h4>Logic Paradigm</h4>
+                            <p>
+                                It can be termed as abstract model of computation. It would solve logical problems like puzzles, series etc. In logic programming we have a knowledge base which we know before and along with the question and knowledge base which is given to machine, it produces result. In normal programming languages, such concept of knowledge base is not available but while using the concept of artificial intelligence, machine learning we have some models like Perception model which is using the same mechanism.
+In logical programming the main emphasize is on knowledge base and the problem. The execution of the program is very much like proof of mathematical statement, e.g., Prologs
+                            </p>
+                        </div>
+                    </div>
+<div class="col-md-4 col-sm-6" data-scrollreveal="enter right and move 100px, wait 0.6s">
+                        <div class="text-center">
+                            <i class="fa fa-thumbs-up icon-round bk-color-brown"></i>
+                            <h4>Dependent Type Paradigm</h4>
+                            <p>
+                              In computer science and logic, a dependent type is a type whose definition depends on a value. It is an overlapping feature of type theory and type systems. In intuitionistic type theory, dependent types are used to encode logic's quantifiers like "for all" and "there exists". In functional programming languages like Agda, ATS, Coq, F*, Epigram, and Idris, dependent types may help reduce bugs by enabling the programmer to assign types that further restrain the set of possible implementations. Two common examples of dependent types are dependent functions and dependent pairs. The return type of a dependent function may depend on the value (not just type) of one of its arguments. For instance, a function that takes a positive integer {\displaystyle n} n may return an array of length {\displaystyle n} n, where the array length is part of the type of the array. (Note that this is different from polymorphism and generic programming, both of which include the type as an argument.) A dependent pair may have a second value of which the type depends on the first value. Sticking with the array example, a dependent pair may be used to pair an array with its length in a type-safe way. Dependent types add complexity to a type system. Deciding the equality of dependent types in a program may require computations. If arbitrary values are allowed in dependent types, then deciding type equality may involve deciding whether two arbitrary programs produce the same result; hence type checking may become undecidable.
+                            </p>
+                        </div>
+                    </div>
+<div class="col-md-4 col-sm-6" data-scrollreveal="enter right and move 100px, wait 0.6s">
+                        <div class="text-center">
+                            <i class="fa fa-cloud icon-round bk-color-light-blue"></i>
+                            <h4>Network Programming Paradigm</h4>
+                            <p>Computer network programming paradigm involves writing computer programs that enable processes to communicate with each other across a computer network.
+                            </p>
+                            <p>The Network paradigm involves thinking of computing in terms of a client, who is essentially in need of some type of information, and a server, who has lots of information and is just waiting to hand it out. Typically, a client will connect to a server and query for certain information. The server will go off and find the information and then return it to the client. Network programming uses a particular type of network communication known as sockets. A socket is a software abstraction for an input or output medium of communication
+ </p>
+<p>Advantages:</p>
+<p> Faster problem solving </p>
+<p> Highly flexible </p>
+<p> Disadvantages:</p>
+<p> expensive</p>
+<p> It lacks independence</p>
+                        </div>
+                    </div>
+<div class="col-md-4 col-sm-6" data-scrollreveal="enter right and move 100px, wait 0.6s">
+                        <div class="text-center">
+                            <i class="fa fa-laptop icon-round bk-color-light-blue"></i>
+                            <h4>Symbolic paradigm</h4>
+                            <p>In computer programming, symbolic programming is a programming paradigm in which the program can manipulate its own formulas and program components as if they were plain data. Languages that support symbolic programming include homoiconic languages such as Wolfram Language, LISP and Prolog.
+                            </p>
+                        </div>
+                    </div>
+<div class="col-md-4 col-sm-6" data-scrollreveal="enter right and move 100px, wait 0.6s">
+                        <div class="text-center">
+                            <i class="fa fa-user icon-round bk-color-green"></i>
+                            <h4>Automata paradigm</h4>
+                            <p>
+                                Automata-based programming is a programming paradigm in which the program or part of it is thought of as a model of a finite-state machine (FSM) or any other (often more complicated) formal automaton (see automata theory). Sometimes a potentially infinite set of possible states is introduced, and such a set can have a complicated structure, not just an enumeration.
+                            </p>
+<p>Examples Abstract State Machine Language </p>
+                        </div>
+                    </div>
+<div class="col-md-4 col-sm-6" data-scrollreveal="enter right and move 100px, wait 0.6s">
+                        <div class="text-center">
+                            <i class="fa fa-info icon-round bk-color-blue"></i>
+                            <h4>GUI</h4>
+                            <p>
+                                The graphical user interface is a form of user interface that allows users to interact with electronic devices through graphical icons and audio indicator such as primary notation, instead of text-based user interfaces, typed command labels or text navigation. GUIs were introduced in reaction to the perceived steep learning curve of command-line interfaces which require commands to be typed on a computer keyboard. The actions in a GUI are usually performed through direct manipulation of the graphical elements. Beyond computers, GUIs are used in many handheld mobile devices such as MP3 players, portable media players, gaming devices, smartphones and smaller household, office and industrial controls. The term GUI tends not to be applied to other lower-display resolution types of interfaces, such as video games (where head-up display, or not including flat screens, like volumetric displays because the term is restricted to the scope of two-dimensional display screens able to describe generic information, in the tradition of the computer science research at the Xerox Palo Alto Research Center.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./ Content div-->
+            </div>
+        </div>
+    </section>
+    <!--END SERVICES SECTION -->
+    <!--PORTFOLIO SECTION -->
+<section id="about-section">
+        <div class="wrap-pad">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 ">
+                    <div class="text-center1">
+                        <h1><i class="fa fa-wrench small-icons bk-color-brown"></i>More Info</h1>
+                        <p class="lead">
+                            For more info go to the below link</p>
+                           <p>www.python.org
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER SECTION -->
+    <footer id="footer">
+        <div class="row">
+            <div class="col-md-12  col-sm-12">
+                &copy; 2014 www.yourdomain.com  |  All Rights Reserved
+               
+            </div>
+        </div>
+    </footer>
+    <!--END FOOTER SECTION -->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY LIBRARY -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- BOOTSTRAP SCRIPTS LIBRARY -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- PRETTYPHOTO  SCRIPTS  LIBRARY-->
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+     <!-- SCROLL REVEL  SCRIPTS  LIBRARY-->
+    <script src="assets/js/scrollReveal.js"></script>
+    <!-- CUSTOM SCRIPT-->
+    <script src="assets/scripts/custom.js"></script>
 </body>
 </html>
